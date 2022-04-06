@@ -1,6 +1,8 @@
 # DEPENDENCIES
+import imp
 import pygame, sys
-p
+from Board import *
+from Pawns import *
 from constants import *
 from typing import *
 
