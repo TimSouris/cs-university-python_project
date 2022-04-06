@@ -1,12 +1,12 @@
 # Importation des libraires et autres classes
 import pygame
-import main
-import Board
-import Pawns
+from constants import *
+
+from constants import HEIGHT, WIDTH
 
 # Initilalisation de la fenêtre
 pygame.init()
-screen=pygame.display.set_mode()
+screen=pygame.display.set_mode(WINDOW_SIZE)
 running = True
 while running:
     for event in pygame.event.get():
@@ -14,6 +14,3 @@ while running:
             running = False
     pygame.display.flip()
 pygame.quit()
-
-def main(): 
-    return
