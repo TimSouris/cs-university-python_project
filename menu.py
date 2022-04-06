@@ -14,3 +14,6 @@ while running:
             running = False
     pygame.display.flip()
 pygame.quit()
+
+def main(): 
+    return
