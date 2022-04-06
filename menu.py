@@ -6,8 +6,7 @@ import Pawns
 
 # Initilalisation de la fenêtre
 pygame.init()
-screen=main.WINDOW
-pygame.display.set_mode()
+screen=pygame.display.set_mode()
 running = True
 while running:
     for event in pygame.event.get():
