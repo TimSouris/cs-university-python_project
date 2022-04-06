@@ -1,4 +1,5 @@
 # Importation des libraires et autres classes
+import main
 import pygame
 from constants import *
 
@@ -12,5 +13,8 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    pygame.display.flip()
+    screen.fill((20,102,200))
+    pygame.draw.rect(screen,BLUE,(250,250,30,50))
+    main.window_update(screen,(20,102,200),CLOCK,False)
+    #pygame.display.flip()
 pygame.quit()

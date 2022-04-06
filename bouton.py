@@ -1,10 +1,14 @@
+from constants import BLACK, HEIGHT, WHITE, WIDTH
+import pygame
+from pygame.locals import *
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
 class button():
 
     #colours for button and text
     button_col = (20, 70, 100)
     hover_col = (75, 225, 255)
     click_col = (50, 150, 255)
-    text_col = black
+    text_col = BLACK
     width = 180
     height = 70
 
@@ -38,13 +42,13 @@ class button():
             pygame.draw.rect(screen, self.button_col, button_rect)
 
         #add shading to button
-        pygame.draw.line(screen, white, (self.x, self.y), (self.x + self.width, self.y), 2)
-        pygame.draw.line(screen, white, (self.x, self.y), (self.x, self.y + self.height), 2)
-        pygame.draw.line(screen, black, (self.x, self.y + self.height), (self.x + self.width, self.y + self.height), 2)
-        pygame.draw.line(screen, black, (self.x + self.width, self.y), (self.x + self.width, self.y + self.height), 2)
+        pygame.draw.line(screen, WHITE, (self.x, self.y), (self.x + self.width, self.y), 2)
+        pygame.draw.line(screen, WHITE, (self.x, self.y), (self.x, self.y + self.height), 2)
+        pygame.draw.line(screen, BLACK, (self.x, self.y + self.height), (self.x + self.width, self.y + self.height), 2)
+        pygame.draw.line(screen, BLACK, (self.x + self.width, self.y), (self.x + self.width, self.y + self.height), 2)
 
         #add text to button
-        text_img = font.render(self.text, True, self.text_col)
+        text_img = pygame.font.render(self.text, True, self.text_col)
         text_len = text_img.get_width()
         screen.blit(text_img, (self.x + int(self.width / 2) - int(text_len / 2), self.y + 25))
         return action
