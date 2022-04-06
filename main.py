@@ -1,7 +1,6 @@
 # DEPENDENCIES
 import pygame, sys
-from Board import Board
-from Pawns import Pawns
+p
 from constants import *
 from typing import *
 
