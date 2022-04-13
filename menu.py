@@ -14,7 +14,6 @@ while running:
         if event.type == pygame.QUIT:
             running = False
     screen.fill((20,102,200))
-    pygame.draw.rect(screen,BLUE,(250,250,30,50))
+    pygame.draw.rect(screen,BLUE,(30,250,440,100))
     main.window_update(screen,(20,102,200),CLOCK,False)
-    #pygame.display.flip()
 pygame.quit()

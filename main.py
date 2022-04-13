@@ -68,4 +68,5 @@ def main() -> None:
         CLOCK.tick(FPS)
         window_update(WINDOW, BLACK, CLOCK, False)
 
-main()
+if __name__ =="__main__":
+    main()
