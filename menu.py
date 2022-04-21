@@ -24,5 +24,5 @@ while True:
         pygame.draw.rect(screen,WHITE,[WIDTH,HEIGHT,400,1000])
     else:
         pygame.draw.rect(screen,BLUE,[WIDTH,HEIGHT,400,1000])
-    screen.blit(text,(WIDTH/2-50,HEIGHT/2-50))
+    screen.blit(text,(WIDTH/2-100,HEIGHT/2-50))
     pygame.display.update()
