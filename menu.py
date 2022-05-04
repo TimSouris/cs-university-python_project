@@ -73,6 +73,8 @@ while True:
     #texte entrée
     text_entree=base_font.render(entree,True,WHITE)
     screen.blit(text_entree,(enter_rect.x+5,enter_rect.y+5))
+
+    
     pygame.display.flip()
     CLOCK.tick(60)
 
